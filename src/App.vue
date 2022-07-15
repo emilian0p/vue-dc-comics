@@ -23,4 +23,6 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
+
+
 </style>

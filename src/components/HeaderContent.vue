@@ -1,15 +1,89 @@
 <template>
-  <div>
-    <h1>Ciao</h1>
-  </div>
+    <header>
+        <img src="../assets/dc-logo.png" alt="">
+        <nav>
+            <ul>
+                <li v-for="(element, index) in navList" :key="index">
+                    {{ element.text }}
+                </li>
+            </ul>
+        </nav>
+    </header>
 </template>
 
 <script>
 export default {
-    name: 'HeaderContent',
+    name: 'MainContent',
+
+    data: function() {
+        return {
+            navList: [
+                {
+                text: "characters",
+                href: "#"
+                },
+                {
+                text: "comics",
+                href: "#"
+                },
+                {
+                text: "movies",
+                href: "#"
+                },
+                {
+                text: "tv",
+                href: "#"
+                },
+                {
+                text: "games",
+                href: "#"
+                },
+                {
+                text: "collectibles",
+                href: "#"
+                },
+                {
+                text: "videos",
+                href: "#"
+                },
+                {
+                text: "fans",
+                href: "#"
+                },
+                {
+                text: "news",
+                href: "#"
+                },
+                {
+                text: "shop",
+                href: "#"
+                },
+                {
+                }
+            ]
+        }
+    }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    font-size: .6rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+img{
+    height:4rem;
+}
 
 </style>

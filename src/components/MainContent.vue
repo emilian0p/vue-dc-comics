@@ -1,15 +1,22 @@
 <template>
-  <div>
-    <h1>Ciao</h1>
-  </div>    
+  <main>
+    <h1>Content goes here</h1>
+  </main>    
 </template>
 
 <script>
 export default {
-     name: 'MainContent',
+    name: 'MainContent',
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+main{
+    background-color: black;
+    padding: 2rem;
+    
+}
+h1{
+    color: white;
+}
 </style>
