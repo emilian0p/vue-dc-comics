@@ -1,6 +1,6 @@
 <template>
     <header>
-        <img src="../assets/dc-logo.png" alt="">
+        <img src="../assets/dc-logo.png" alt="DC    Logo">
         <nav>
             <ul>
                 <li v-for="(element, index) in navList" :key="index">
@@ -39,11 +39,12 @@ export default {
                 href: "#"
                 },
                 {
+
                 text: "collectibles",
                 href: "#"
                 },
                 {
-                text: "videos",
+                text: "videos", 
                 href: "#"
                 },
                 {
