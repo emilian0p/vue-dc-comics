@@ -178,9 +178,9 @@ li a {
 a {
     text-decoration: none;
 }
-a:hover {
+/* a:hover {
     
-}
+} */
 .footer-left {
     width: 35%;
 }
