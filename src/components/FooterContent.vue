@@ -8,7 +8,7 @@
                         <h3 class="text-white fs-5 mb-3">DC COMICS</h3>
                         <ul class="mb-4">
                             <li v-for="(link , index) in linksDcComics" :key="index">
-                                <a class="text-decoration-underline  " href="#">{{ link.text }}</a>
+                                <a class="text-decoration-underline" href="#">{{ link.text }}</a>
                             </li>
                         </ul>
                         <h3 class="text-white fs-5 mb-3">SHOP</h3>
@@ -174,13 +174,18 @@ li a {
     color: rgba(255, 255, 255, 0.377);
     font-size: 0.8rem;
     text-decoration: none;
+    &:hover {
+            color: #0282F9;
+        }
 }
 a {
     text-decoration: none;
 }
-/* a:hover {
-    
-} */
+div a:hover {
+        background-color: #0282F9;
+}
+
+
 .footer-left {
     width: 35%;
 }

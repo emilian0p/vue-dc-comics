@@ -82,6 +82,10 @@ li {
     padding: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover {
+            border-bottom: 5px solid #0282F9;
+            color: #0282F9;
+        }
 }
 img{
     height:4rem;
